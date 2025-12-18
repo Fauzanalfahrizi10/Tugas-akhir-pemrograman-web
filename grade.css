@@ -1,0 +1,142 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  background: linear-gradient(to right, #d6e9d2#f8f8f8);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, white, #d6e9d2);
+  color: #111d16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  height: 60px;
+}
+
+.logo {
+  height: 300px;
+  width: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #1a4d2e;
+}
+
+/* MAIN CONTAINER */
+.container {
+  padding: 150px 50px 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  color: #1a4d2e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* CARD WRAPPER */
+.grade-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* CARD */
+.grade-card {
+  flex: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.grade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.grade-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.grade-card h2 {
+  font-size: 24px;
+  color: #1a4d2e;
+  margin-bottom: 10px;
+}
+
+.grade-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grade-cards {
+    flex-direction: column;
+  }
+
+  .grade-card {
+    margin-bottom: 30px;
+  }
+}
